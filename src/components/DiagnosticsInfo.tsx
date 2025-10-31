@@ -51,9 +51,7 @@ export const DiagnosticsInfo = () => {
               <p className="text-2xl font-bold text-foreground">
                 Вартість: 500 грн
               </p>
-              <p className="text-muted-foreground mt-1">
-                Повна діагностика за доступною ціною
-              </p>
+              <p className="text-muted-foreground mt-1">Діагностика зору за доступною ціною</p>
             </div>
           </div>
         </div>
