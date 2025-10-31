@@ -53,9 +53,9 @@ export const Hero = () => {
                 className="text-lg h-14 px-8"
                 asChild
               >
-                <a href="tel:0800330149">
+                <a href="tel:0800332143">
                   <Phone className="mr-2" />
-                  0800 330 149
+                  0 800 332 143
                 </a>
               </Button>
             </div>

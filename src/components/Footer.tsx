@@ -29,12 +29,12 @@ export const Footer = () => {
             <h3 className="text-lg font-bold mb-4 text-accent">Контакти</h3>
             <div className="space-y-3">
               <a 
-                href="tel:0800330149"
+                href="tel:0800332143"
                 className="flex items-start gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors group"
               >
                 <Phone className="w-5 h-5 mt-0.5 group-hover:text-accent transition-colors" />
                 <div>
-                  <div className="font-medium">0800 330 149</div>
+                  <div className="font-medium">0 800 332 143</div>
                   <div className="text-sm text-primary-foreground/60">Безкоштовно по Україні</div>
                 </div>
               </a>

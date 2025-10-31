@@ -112,11 +112,11 @@ export const BookingForm = () => {
               Або зателефонуйте нам прямо зараз:
             </p>
             <a 
-              href="tel:0800330149"
+              href="tel:0800332143"
               className="inline-flex items-center gap-2 text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
             >
               <Phone className="w-7 h-7" />
-              0800 330 149
+              0 800 332 143
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               Безкоштовно по Україні
