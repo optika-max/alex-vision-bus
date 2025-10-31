@@ -1,5 +1,5 @@
 import { CheckCircle2, Clock, Shield, Sparkles } from "lucide-react";
-import busConsultation from "@/assets/bus-consultation.png";
+import busExterior from "@/assets/bus-exterior.png";
 export const DiagnosticsInfo = () => {
   const included = ["Перевірка гостроти зору", "Авторефрактометрія", "Вимірювання внутрішньоочного тиску", "Біомікроскопія переднього відрізка ока", "Офтальмоскопія", "Консультація офтальмолога"];
   const features = [{
@@ -18,7 +18,7 @@ export const DiagnosticsInfo = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-secondary to-accent opacity-20 blur-2xl rounded-3xl"></div>
-              <img src={busConsultation} alt="Консультація в офтальмобусі" className="relative w-full h-auto rounded-2xl shadow-2xl" />
+              <img src={busExterior} alt="Офтальмобус Alex - мобільний діагностичний центр" className="relative w-full h-auto rounded-2xl shadow-2xl" />
             </div>
           </div>
 
@@ -51,7 +51,9 @@ export const DiagnosticsInfo = () => {
               <p className="text-2xl font-bold text-foreground">
                 Вартість: 500 грн
               </p>
-              <p className="text-muted-foreground mt-1">Діагностика зору за доступною ціною</p>
+              <p className="text-muted-foreground mt-1">
+                Повна діагностика за доступною ціною
+              </p>
             </div>
           </div>
         </div>
