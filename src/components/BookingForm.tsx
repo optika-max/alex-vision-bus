@@ -38,7 +38,7 @@ export const BookingForm = () => {
       setIsSubmitting(false);
     }, 1000);
   };
-  return <section id="booking-form" className="py-16 lg:py-24 bg-gradient-to-br from-secondary/30 via-background to-accent/10">
+  return <section id="booking-form" className="py-16 lg:py-24 bg-gradient-to-br from-secondary/50 via-accent/30 to-secondary/40">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
@@ -48,7 +48,7 @@ export const BookingForm = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 lg:p-10 rounded-2xl shadow-hover border border-border">
+          <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 lg:p-10 rounded-2xl shadow-elegant border-2 border-primary/20 hover:border-primary/40 transition-all duration-300">
             <div className="space-y-2">
               <Label htmlFor="name" className="text-base font-semibold">
                 Ім'я
