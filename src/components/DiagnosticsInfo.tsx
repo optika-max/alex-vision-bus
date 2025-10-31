@@ -1,5 +1,5 @@
 import { CheckCircle2, Clock, Shield, Sparkles } from "lucide-react";
-import busConsultation from "@/assets/bus-consultation.png";
+import busConsultation from "@/assets/bus-consultation-new.png";
 export const DiagnosticsInfo = () => {
   const included = ["Перевірка гостроти зору", "Авторефрактометрія", "Вимірювання внутрішньоочного тиску", "Біомікроскопія переднього відрізка ока", "Офтальмоскопія", "Консультація офтальмолога"];
   const features = [{
