@@ -24,7 +24,7 @@ export const DiagnosticsInfo = () => {
 
           <div className="space-y-8 order-1 lg:order-2">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 lg:text-4xl">Що входить у діагностику  нашому офтальмобусі?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 lg:text-4xl">Що входить у діагностику в офтальмобусі?</h2>
               <p className="text-xl text-muted-foreground">
                 Комплексна перевірка зору на найсучаснішому обладнанні
               </p>
