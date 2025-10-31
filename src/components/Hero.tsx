@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import alexLogo from "@/assets/alex-logo.png";
-import busExterior from "@/assets/bus-exterior.png";
+import busExterior from "@/assets/bus-exterior-hero.png";
 
 export const Hero = () => {
   const scrollToForm = () => {
