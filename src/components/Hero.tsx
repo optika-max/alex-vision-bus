@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import alexLogo from "@/assets/alex-logo.png";
-import heroBanner from "@/assets/hero-banner.png";
+import busExterior from "@/assets/bus-exterior.png";
 
 export const Hero = () => {
   const scrollToForm = () => {
@@ -78,10 +78,11 @@ export const Hero = () => {
           
           <div className="relative lg:h-[600px] flex items-center justify-center">
             <div className="relative w-full max-w-lg">
+              <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-20 blur-3xl rounded-full"></div>
               <img 
-                src={heroBanner} 
-                alt="Alex Офтальмологічний Центр" 
-                className="relative w-full h-auto rounded-2xl shadow-2xl"
+                src={busExterior} 
+                alt="Офтальмологічний мобільний кабінет Alex" 
+                className="relative w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
