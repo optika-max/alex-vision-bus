@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import alexLogo from "@/assets/alex-logo.png";
-import busExterior from "@/assets/bus-exterior.png";
+import busExterior from "@/assets/bus-exterior-new.png";
+import busInterior from "@/assets/bus-interior-new.png";
 
 export const Hero = () => {
   const scrollToForm = () => {
@@ -10,7 +11,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-muted/30 via-background to-secondary/20">
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-secondary/40 via-secondary/30 to-background">
       <div className="container mx-auto px-4 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
@@ -77,13 +78,21 @@ export const Hero = () => {
           </div>
           
           <div className="relative lg:h-[600px] flex items-center justify-center">
-            <div className="relative w-full max-w-lg">
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-20 blur-3xl rounded-full"></div>
-              <img 
-                src={busExterior} 
-                alt="Офтальмологічний мобільний кабінет Alex" 
-                className="relative w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
-              />
+            <div className="grid grid-cols-1 gap-4 w-full max-w-lg">
+              <div className="relative">
+                <img 
+                  src={busExterior} 
+                  alt="Офтальмологічний мобільний кабінет Alex" 
+                  className="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="relative">
+                <img 
+                  src={busInterior} 
+                  alt="Інтер'єр офтальмологічного кабінету" 
+                  className="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                />
+              </div>
             </div>
           </div>
         </div>
