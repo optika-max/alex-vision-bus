@@ -10,7 +10,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-muted/30 via-background to-secondary/20">
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-secondary/60 via-secondary/40 to-secondary/20">
       <div className="container mx-auto px-4 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
