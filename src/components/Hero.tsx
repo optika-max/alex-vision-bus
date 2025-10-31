@@ -10,16 +10,9 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBanner})` }}
-      >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
-      </div>
-      
-      <div className="container relative z-10 mx-auto px-4 py-12 lg:py-20">
-        <div className="max-w-3xl">
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-muted/30 via-background to-secondary/20">
+      <div className="container mx-auto px-4 py-12 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <img 
               src={alexLogo} 
@@ -35,7 +28,7 @@ export const Hero = () => {
               Відновлюємо зір. Повертаємо радість життя.
             </p>
             
-            <div className="bg-accent/20 border-l-4 border-accent px-6 py-4 rounded-r-lg backdrop-blur-sm">
+            <div className="bg-accent/20 border-l-4 border-accent px-6 py-4 rounded-r-lg">
               <p className="text-lg font-medium text-foreground">
                 📍 м. Тетіїв, вул. Цвіткова, 26
               </p>
@@ -80,6 +73,16 @@ export const Hero = () => {
                 <span className="w-2 h-2 bg-accent rounded-full"></span>
                 <span>500 грн</span>
               </div>
+            </div>
+          </div>
+          
+          <div className="relative lg:h-[600px] flex items-center justify-center">
+            <div className="relative w-full max-w-lg">
+              <img 
+                src={heroBanner} 
+                alt="Alex Офтальмологічний Центр" 
+                className="relative w-full h-auto rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
