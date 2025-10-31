@@ -10,59 +10,57 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-secondary">
-      <div className="container mx-auto px-6 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Ліва колонка з текстом */}
-          <div className="space-y-10 animate-fade-in">
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-muted/30 via-background to-secondary/20">
+      <div className="container mx-auto px-4 py-12 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8 animate-fade-in">
             <img 
               src={alexLogo} 
               alt="Alex Офтальмологічний Центр" 
-              className="h-12 w-auto mb-12"
+              className="h-16 md:h-20 w-auto"
             />
             
-            <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
-                Сучасна<br />
-                Офтальмохірургія<br />
-                в Білій Церкві
-              </h1>
-              
-              <p className="text-2xl md:text-3xl font-medium text-foreground/80 leading-tight">
-                Діагностика — запорука<br />
-                комфортного завтра.
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              Діагностика зору біля вашого дому
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-xl">
+              Відновлюємо зір. Повертаємо радість життя.
+            </p>
+            
+            <div className="bg-accent/20 border-l-4 border-accent px-6 py-4 rounded-r-lg">
+              <p className="text-lg font-medium text-foreground">
+                📍 м. Тетіїв, вул. Цвіткова, 26
+              </p>
+              <p className="text-lg font-medium text-foreground mt-1">
+                📅 Центральна районна лікарня
               </p>
             </div>
             
-            <div className="space-y-4 pt-6">
-              <div className="flex items-start gap-3">
-                <span className="text-2xl">📍</span>
-                <div>
-                  <p className="text-lg font-medium text-foreground">м. Тетіїв, вул. Цвіткова, 26</p>
-                  <p className="text-base text-foreground/70">Центральна районна лікарня</p>
-                </div>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Button 
+                size="lg" 
+                variant="hero"
+                className="text-lg h-14 px-8"
+                onClick={scrollToForm}
+              >
+                Записатися на діагностику
+              </Button>
               
-              <div className="flex items-start gap-3">
-                <span className="text-2xl">📞</span>
-                <div>
-                  <p className="text-lg font-medium text-foreground">Запис за телефоном</p>
-                  <a href="tel:0800332143" className="text-xl font-bold text-foreground hover:text-foreground/70 transition-colors">
-                    0 800 332 143
-                  </a>
-                </div>
-              </div>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="text-lg h-14 px-8"
+                asChild
+              >
+                <a href="tel:0800332143">
+                  <Phone className="mr-2" />
+                  0 800 332 143
+                </a>
+              </Button>
             </div>
             
-            <Button 
-              size="lg" 
-              className="text-lg h-16 px-12 bg-primary text-primary-foreground hover:bg-primary/90 font-semibold rounded-full"
-              onClick={scrollToForm}
-            >
-              Записатися на діагностику
-            </Button>
-            
-            <div className="flex flex-wrap items-center gap-6 pt-4 text-base text-foreground/70">
+            <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-accent rounded-full"></span>
                 <span>~30 хвилин</span>
@@ -78,13 +76,13 @@ export const Hero = () => {
             </div>
           </div>
           
-          {/* Права колонка з зображенням */}
-          <div className="relative flex items-center justify-center lg:justify-end">
-            <div className="relative w-full max-w-xl">
+          <div className="relative lg:h-[600px] flex items-center justify-center">
+            <div className="relative w-full max-w-lg">
+              <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-20 blur-3xl rounded-full"></div>
               <img 
                 src={busExterior} 
                 alt="Офтальмологічний мобільний кабінет Alex" 
-                className="w-full h-auto rounded-3xl shadow-2xl"
+                className="relative w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
