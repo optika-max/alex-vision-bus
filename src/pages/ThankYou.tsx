@@ -14,20 +14,20 @@ const ThankYou = () => {
           </div>
         </div>
         
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">
           Дякуємо за Вашу довіру!
         </h1>
         
-        <p className="text-lg md:text-xl text-muted-foreground mb-8">
+        <p className="text-lg md:text-xl text-muted-foreground mb-5 md:mb-8">
           Ми вже отримали Ваш запит і дуже скоро з Вами зв'яжеться наш адміністратор.
         </p>
 
-        <div className="text-left mb-8 max-w-xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
+        <div className="text-left mb-5 md:mb-8 max-w-xl mx-auto">
+          <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-3 md:mb-4">
             Що буде далі:
           </h2>
           
-          <ul className="space-y-3 text-base md:text-lg text-muted-foreground">
+          <ul className="space-y-2 md:space-y-3 text-base md:text-lg text-muted-foreground">
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
               <span>Узгодимо зручний час візиту</span>
@@ -47,10 +47,10 @@ const ThankYou = () => {
           </ul>
         </div>
 
-        <p className="text-base md:text-lg text-foreground font-medium mb-2">
+        <p className="text-base md:text-lg text-foreground font-medium mb-1 md:mb-2">
           Ви - в надійних руках.
         </p>
-        <p className="text-sm md:text-base text-muted-foreground mb-8">
+        <p className="text-sm md:text-base text-muted-foreground mb-5 md:mb-8">
           З турботою, команда офтальмологічного центру «Алекс»
         </p>
 
