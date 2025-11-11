@@ -78,7 +78,7 @@ export const BookingForm = () => {
             <Button type="submit" size="lg" variant="hero" className="w-full h-14 text-lg" disabled={isSubmitting}>
               {isSubmitting ? "Відправляємо..." : <>
                   <CheckCircle className="mr-2" />
-                  Записатися на прийом
+                  Записатися на діагностику
                 </>}
             </Button>
 
