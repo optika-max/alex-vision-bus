@@ -28,6 +28,21 @@ export const Hero = () => {
               Відновлюємо зір. Повертаємо радість життя.
             </p>
             
+            <div className="space-y-4">
+              <p className="text-lg md:text-xl text-foreground">
+                <span className="font-bold">Вартість: 500 грн.</span> Повна діагностика за доступною ціною
+              </p>
+              
+              <Button 
+                size="lg" 
+                variant="hero"
+                className="text-lg h-14 px-8 w-full sm:w-auto"
+                onClick={scrollToForm}
+              >
+                Записатися на діагностику
+              </Button>
+            </div>
+            
             <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-accent rounded-full"></span>
@@ -37,20 +52,6 @@ export const Hero = () => {
                 <span className="w-2 h-2 bg-accent rounded-full"></span>
                 <span>Безболісно</span>
               </div>
-            </div>
-
-            <div className="space-y-4 pt-4">
-              <div className="text-4xl md:text-5xl font-bold text-foreground">
-                500 грн
-              </div>
-              <Button 
-                size="lg" 
-                variant="hero"
-                className="text-lg h-14 px-8 w-full sm:w-auto"
-                onClick={scrollToForm}
-              >
-                Записатися на діагностику
-              </Button>
             </div>
           </div>
           
