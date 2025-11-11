@@ -4,13 +4,8 @@ import alexLogo from "@/assets/alex-logo.png";
 import busExterior from "@/assets/bus-exterior-hero.png";
 
 export const Hero = () => {
-  const scrollToForm = () => {
-    const formElement = document.getElementById("booking-form");
-    formElement?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-secondary/60 via-secondary/40 to-secondary/20">
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-secondary/60 via-secondary/40 to-secondary/20 pt-20">
       <div className="container mx-auto px-4 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
@@ -27,38 +22,6 @@ export const Hero = () => {
             <p className="text-xl md:text-2xl text-muted-foreground max-w-xl">
               Відновлюємо зір. Повертаємо радість життя.
             </p>
-            
-            <div className="bg-accent/20 border-l-4 border-accent px-6 py-4 rounded-r-lg">
-              <p className="text-lg font-medium text-foreground">
-                📍 м. Тетіїв, вул. Цвіткова, 26
-              </p>
-              <p className="text-lg font-medium text-foreground mt-1">
-                📅 Центральна районна лікарня
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button 
-                size="lg" 
-                variant="hero"
-                className="text-lg h-14 px-8"
-                onClick={scrollToForm}
-              >
-                Записатися на діагностику
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="text-lg h-14 px-8"
-                asChild
-              >
-                <a href="tel:0800332143">
-                  <Phone className="mr-2" />
-                  0 800 332 143
-                </a>
-              </Button>
-            </div>
             
             <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
