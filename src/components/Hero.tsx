@@ -16,7 +16,7 @@ export const Hero = () => {
         className="absolute inset-0 lg:hidden bg-cover bg-center"
         style={{ backgroundImage: `url(${busExterior})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/65 to-background/85"></div>
       </div>
       
       {/* Desktop gradient background */}
