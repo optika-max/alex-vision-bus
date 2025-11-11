@@ -49,7 +49,7 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative lg:h-[600px] flex items-center justify-center">
+          <div className="relative lg:h-[600px] flex items-start lg:items-center justify-center pt-4 lg:pt-0">
             <div className="relative w-full max-w-lg">
               <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-20 blur-3xl rounded-full"></div>
               <img 
