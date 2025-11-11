@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { useNavigate } from "react-router-dom";
 import { Phone, User, CheckCircle } from "lucide-react";
 export const BookingForm = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     phone: ""
@@ -27,15 +27,7 @@ export const BookingForm = () => {
 
     // Simulate form submission
     setTimeout(() => {
-      toast({
-        title: "Заявку відправлено!",
-        description: "Ми зв'яжемося з вами найближчим часом"
-      });
-      setFormData({
-        name: "",
-        phone: ""
-      });
-      setIsSubmitting(false);
+      navigate("/thank-you");
     }, 1000);
   };
   return <section id="booking-form" className="py-16 lg:py-24 bg-gradient-to-br from-secondary/50 via-accent/30 to-secondary/40">
