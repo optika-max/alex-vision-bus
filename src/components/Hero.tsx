@@ -10,8 +10,19 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-secondary/60 via-secondary/40 to-secondary/20 pt-20">
-      <div className="container mx-auto px-4 py-12 lg:py-20">
+    <section className="relative min-h-[90vh] flex items-center pt-20">
+      {/* Mobile background image */}
+      <div 
+        className="absolute inset-0 lg:hidden bg-cover bg-center"
+        style={{ backgroundImage: `url(${busExterior})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95"></div>
+      </div>
+      
+      {/* Desktop gradient background */}
+      <div className="absolute inset-0 hidden lg:block bg-gradient-to-br from-secondary/60 via-secondary/40 to-secondary/20"></div>
+      
+      <div className="container mx-auto px-4 py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <img 
@@ -49,7 +60,7 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative lg:h-[600px] flex items-start lg:items-center justify-center pt-4 lg:pt-0">
+          <div className="relative lg:h-[600px] hidden lg:flex items-center justify-center">
             <div className="relative w-full max-w-lg">
               <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-20 blur-3xl rounded-full"></div>
               <img 
