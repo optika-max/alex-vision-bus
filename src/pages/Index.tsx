@@ -8,6 +8,7 @@ import { BookingForm } from "@/components/BookingForm";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
@@ -16,6 +17,23 @@ const Index = () => {
       <Hero />
       <TrustBadges />
       <DiagnosticsInfo />
+      
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4 text-center">
+          <Button 
+            size="lg" 
+            variant="hero"
+            className="text-lg h-14 px-8"
+            onClick={() => {
+              const formElement = document.getElementById("booking-form");
+              formElement?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Записатися на діагностику
+          </Button>
+        </div>
+      </section>
+      
       <Services />
       <Stats />
       <BookingForm />
