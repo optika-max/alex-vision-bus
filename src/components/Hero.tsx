@@ -48,7 +48,7 @@ export const Hero = () => {
               Записатися на діагностику
             </Button>
             
-            <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-6 pt-4 text-base md:text-lg text-muted-foreground">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-accent rounded-full"></span>
                 <span>~30 хвилин</span>
