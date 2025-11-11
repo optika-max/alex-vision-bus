@@ -9,8 +9,8 @@ const ThankYou = () => {
     <div className="min-h-screen bg-gradient-to-br from-secondary/50 via-accent/30 to-secondary/40 flex items-center justify-center px-4">
       <div className="max-w-2xl w-full bg-card p-8 lg:p-12 rounded-2xl shadow-elegant border-2 border-primary/20 text-center">
         <div className="mb-6 flex justify-center">
-          <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center">
-            <CheckCircle className="w-12 h-12 text-primary" />
+          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+            <CheckCircle className="w-6 h-6 text-primary" />
           </div>
         </div>
         
