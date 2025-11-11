@@ -14,7 +14,7 @@ const ThankYou = () => {
           </div>
         </div>
         
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-2">
           Дякуємо за Вашу довіру!
         </h1>
         
