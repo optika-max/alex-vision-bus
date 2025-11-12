@@ -12,7 +12,7 @@ export const DiagnosticsInfo = () => {
     icon: Sparkles,
     text: "Сучасні технології"
   }];
-  return <section className="py-16 lg:py-24 bg-gradient-to-b from-background to-secondary/20">
+  return <section id="diagnostics" className="py-16 lg:py-24 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
