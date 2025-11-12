@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 const ThankYou = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-secondary/50 via-accent/30 to-secondary/40 flex items-center justify-center px-4">
+  return <div className="min-h-screen bg-gradient-to-br from-secondary/50 via-accent/30 to-secondary/40 flex items-center justify-center px-4">
       <div className="max-w-2xl w-full bg-card p-8 lg:p-12 rounded-2xl shadow-elegant border-2 border-primary/20 text-center">
         <div className="mb-6 flex justify-center">
           <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -47,21 +44,13 @@ const ThankYou = () => {
           </ul>
         </div>
 
-        <p className="text-base md:text-lg text-muted-foreground mb-6">
-          Ви - в надійних руках. З турботою, команда офтальмологічного центру «Алекс»
-        </p>
+        <p className="text-base md:text-lg text-muted-foreground mb-6">Ви - в надійних руках. 
+З турботою, команда офтальмологічного центру «Алекс»</p>
 
-        <Button 
-          size="lg" 
-          variant="hero"
-          className="text-lg h-14 px-8"
-          onClick={() => navigate("/")}
-        >
+        <Button size="lg" variant="hero" className="text-lg h-14 px-8" onClick={() => navigate("/")}>
           Повернутися на головну
         </Button>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ThankYou;
