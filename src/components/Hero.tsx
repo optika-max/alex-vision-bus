@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
 import alexLogo from "@/assets/alex-logo.png";
-import busExterior from "@/assets/bus-exterior-hero.png";
+
 export const Hero = () => {
   const scrollToForm = () => {
     const formElement = document.getElementById("booking-form");
@@ -10,15 +9,19 @@ export const Hero = () => {
     });
   };
   return <section className="relative min-h-[90vh] flex items-center pt-20">
-      {/* Mobile background image */}
-      <div className="absolute inset-0 lg:hidden bg-cover bg-center" style={{
-      backgroundImage: `url(${busExterior})`
-    }}>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/65 to-background/85"></div>
+      {/* Video background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background/80"></div>
       </div>
-      
-      {/* Desktop gradient background */}
-      <div className="absolute inset-0 hidden lg:block bg-gradient-to-br from-secondary/60 via-secondary/40 to-secondary/20"></div>
       
       <div className="container mx-auto px-4 py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -47,12 +50,8 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative lg:h-[600px] hidden lg:flex items-center justify-center">
-            <div className="relative w-full max-w-lg">
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-20 blur-3xl rounded-full"></div>
-              <img src={busExterior} alt="Офтальмологічний мобільний кабінет Alex" className="relative w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500" />
-            </div>
-          </div>
+          {/* Right side intentionally left empty - video is the visual focus */}
+          <div className="hidden lg:block"></div>
         </div>
       </div>
     </section>;
