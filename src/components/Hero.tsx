@@ -54,7 +54,7 @@ export const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-2.5">
-              Діагностику зору
+              Діагностика зору
               <span className="block text-lg md:text-xl lg:text-2xl mt-2 font-normal">від офтальмологічного центру "Алекс"</span>
             </h1>
             
