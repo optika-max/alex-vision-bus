@@ -55,7 +55,7 @@ export const Hero = () => {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-2.5">
               Діагностику зору
-              <span className="block text-2xl md:text-3xl lg:text-4xl mt-2">від офтальмологічного центру "Алекс"</span>
+              <span className="block text-xl md:text-2xl lg:text-3xl mt-2">від офтальмологічного центру "Алекс"</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-foreground/90 max-w-xl font-medium drop-shadow-md">
