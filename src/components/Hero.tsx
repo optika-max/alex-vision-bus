@@ -53,7 +53,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">Діагностика      зору </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight -mt-8">Діагностика зору</h1>
             
             <p className="text-xl md:text-2xl text-foreground/90 max-w-xl font-medium drop-shadow-md">
               Відновлюємо зір. Повертаємо радість життя.
