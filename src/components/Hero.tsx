@@ -59,7 +59,7 @@ export const Hero = () => {
               Відновлюємо зір. Повертаємо радість життя.
             </p>
             
-            <Button size="lg" variant="hero" className="text-lg h-14 px-8 w-full sm:w-auto" onClick={scrollToForm}>
+            <Button size="lg" variant="hero" className="text-lg h-14 px-8 w-full sm:w-auto mt-4" onClick={scrollToForm}>
               Записатися на діагностику
             </Button>
             
