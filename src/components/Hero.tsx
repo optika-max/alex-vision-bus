@@ -28,8 +28,7 @@ export const Hero = () => {
     });
   };
 
-  return (
-    <section className="relative min-h-[90vh] flex items-center pt-20">
+  return <section className="relative min-h-[90vh] flex items-center pt-20">
       {/* Video background */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -52,18 +51,12 @@ export const Hero = () => {
       
       <div className="container mx-auto px-4 py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in">
-            <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm md:text-base font-medium">
-              <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
-              Мобільний офтальмологічний кабінет
-            </div>
+          <div className="space-y-8 animate-fade-in">
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Професійна діагностика зору <span className="text-accent">поруч з вашим домом</span>
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">Діагностика      зору </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-xl">
-              Офтальмологічний центр <span className="text-foreground font-semibold">«Алекс»</span> — приїжджаємо до вас. Сучасне обладнання та досвідчені лікарі.
+              Відновлюємо зір. Повертаємо радість життя.
             </p>
             
             <Button size="lg" variant="hero" className="text-lg h-14 px-8 w-full sm:w-auto" onClick={scrollToForm}>
@@ -86,6 +79,5 @@ export const Hero = () => {
           <div className="hidden lg:block"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
