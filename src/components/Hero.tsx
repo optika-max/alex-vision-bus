@@ -1,21 +1,48 @@
 import { Button } from "@/components/ui/button";
 import alexLogo from "@/assets/alex-logo.png";
+import { useEffect, useRef } from "react";
 
 export const Hero = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      // Force play on mobile
+      video.play().catch(() => {
+        // If autoplay fails, try again on user interaction
+        const playOnInteraction = () => {
+          video.play();
+          document.removeEventListener('touchstart', playOnInteraction);
+          document.removeEventListener('click', playOnInteraction);
+        };
+        document.addEventListener('touchstart', playOnInteraction, { once: true });
+        document.addEventListener('click', playOnInteraction, { once: true });
+      });
+    }
+  }, []);
+
   const scrollToForm = () => {
     const formElement = document.getElementById("booking-form");
     formElement?.scrollIntoView({
       behavior: "smooth"
     });
   };
+
   return <section className="relative min-h-[90vh] flex items-center pt-20">
       {/* Video background */}
       <div className="absolute inset-0 overflow-hidden">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
+          webkit-playsinline="true"
+          x5-playsinline="true"
+          x5-video-player-type="h5"
+          x5-video-player-fullscreen="true"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/hero-video.mp4" type="video/mp4" />
