@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import alexLogo from "@/assets/alex-logo.png";
 import { useEffect, useRef } from "react";
 
 export const Hero = () => {
@@ -53,7 +52,6 @@ export const Hero = () => {
       <div className="container mx-auto px-4 py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
-            <img src={alexLogo} alt="Alex Офтальмологічний Центр" className="h-16 md:h-20 w-auto" />
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">Діагностика      зору </h1>
             
