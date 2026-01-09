@@ -55,7 +55,7 @@ export const Hero = () => {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">Діагностика      зору </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-xl">
+            <p className="text-xl md:text-2xl text-foreground/90 max-w-xl font-medium drop-shadow-md">
               Відновлюємо зір. Повертаємо радість життя.
             </p>
             
@@ -63,13 +63,13 @@ export const Hero = () => {
               Записатися на діагностику
             </Button>
             
-            <div className="flex items-center gap-6 pt-4 text-base md:text-lg text-muted-foreground">
+            <div className="flex items-center gap-6 pt-4 text-base md:text-lg text-foreground/80 font-medium drop-shadow-md">
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-accent rounded-full"></span>
+                <span className="w-3 h-3 bg-accent rounded-full shadow-sm"></span>
                 <span>~30 хвилин</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-accent rounded-full"></span>
+                <span className="w-3 h-3 bg-accent rounded-full shadow-sm"></span>
                 <span>Безболісно</span>
               </div>
             </div>
